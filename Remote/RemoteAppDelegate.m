@@ -7,34 +7,45 @@
 //
 
 #import "RemoteAppDelegate.h"
-#import "RemoteControl.h"
 #import "AppleRemote.h"
+#import "RemoteControl.h"
 #import "MultiClickRemoteBehavior.h"
 
 @implementation RemoteAppDelegate
 
 @synthesize window;
+@synthesize remoteControll = _remoteControl;
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-   _remoteControll = [[AppleRemote alloc] initWithDelegate: self];
-	[_remoteControll setDelegate: self];	
+   _remoteControl = [[AppleRemote alloc] initWithDelegate: self];
+	[_remoteControl setDelegate: self];	
     
 	// OPTIONAL CODE 
 	// The MultiClickRemoteBehavior adds extra functionality.
 	// It works like a middle man between the delegate and the remote control
 	remoteBehavior = [MultiClickRemoteBehavior new];		
 	[remoteBehavior setDelegate: self];
-	[_remoteControll setDelegate: remoteBehavior];
+	[_remoteControl setDelegate: remoteBehavior];
 
-    [_remoteControll startListening: self];
+    [_remoteControl startListening: self];
+    [_remoteControl setListeningToRemote:NO];
 }
-
 
 - (void) remoteButton: (RemoteControlEventIdentifier)buttonIdentifier pressedDown: (BOOL) pressedDown clickCount: (unsigned int)clickCount
 {
     if (pressedDown == YES) return;
+
     NSLog(@"Click");
+}
+
+- (IBAction)enableDisableRemoteControll:(id)sender
+{
+    if (_remoteControl.isListeningToRemote == YES) {
+        [_remoteControl setListeningToRemote:NO];
+    } else {
+        [_remoteControl setListeningToRemote:YES];
+    }
 }
 
 @end

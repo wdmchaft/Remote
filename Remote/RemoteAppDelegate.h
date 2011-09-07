@@ -8,17 +8,20 @@
 
 #import <Cocoa/Cocoa.h>
 
-@class RemoteControll;
+@class RemoteControl;
 @class MultiClickRemoteBehavior;
 
 
 @interface RemoteAppDelegate : NSObject <NSApplicationDelegate> {
     NSWindow *window;
     
-    RemoteControll *_remoteControll;
+    RemoteControl *_remoteControl;
     MultiClickRemoteBehavior* remoteBehavior;
 }
 
 @property (assign) IBOutlet NSWindow *window;
+@property (nonatomic, retain) RemoteControl *remoteControll;
+
+- (IBAction)enableDisableRemoteControll:(id)sender;
 
 @end
