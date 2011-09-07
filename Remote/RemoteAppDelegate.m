@@ -56,6 +56,7 @@
 
 
 #pragma mark - RemoteControl delegate
+
 - (void) remoteButton:(RemoteControlEventIdentifier)buttonIdentifier pressedDown:(BOOL)pressedDown clickCount: 
   (unsigned int)clickCount
 {

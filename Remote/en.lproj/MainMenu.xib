@@ -59,7 +59,7 @@
 						<object class="NSButton" id="237024501">
 							<reference key="NSNextResponder" ref="439893737"/>
 							<int key="NSvFlags">268</int>
-							<string key="NSFrame">{{18, 18}, {241, 18}}</string>
+							<string key="NSFrame">{{18, 18}, {222, 18}}</string>
 							<reference key="NSSuperview" ref="439893737"/>
 							<reference key="NSWindow"/>
 							<reference key="NSNextKeyView" ref="675534145"/>
@@ -68,7 +68,7 @@
 							<object class="NSButtonCell" key="NSCell" id="744273685">
 								<int key="NSCellFlags">67239424</int>
 								<int key="NSCellFlags2">0</int>
-								<string key="NSContents">Is listining to apple remote control</string>
+								<string key="NSContents"> Listen to Apple Remote control</string>
 								<object class="NSFont" key="NSSupport">
 									<string key="NSName">LucidaGrande</string>
 									<double key="NSSize">13</double>
@@ -97,6 +97,7 @@
 							<string key="NSFrame">{{286, 16}, {52, 18}}</string>
 							<reference key="NSSuperview" ref="439893737"/>
 							<reference key="NSWindow"/>
+							<reference key="NSNextKeyView"/>
 							<string key="NSReuseIdentifierKey">_NS:1751</string>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSLevelIndicatorCell" key="NSCell" id="850000154">
