@@ -29,8 +29,6 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-    
-    [NSApp delete:self];
     _remoteControl = [[AppleRemote alloc] initWithDelegate: self];
     [_remoteControl setDelegate: self];	
     
