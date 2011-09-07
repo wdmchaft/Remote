@@ -1,0 +1,490 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		290E5B50141806D700AC313A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 290E5B4F141806D700AC313A /* Cocoa.framework */; };
+		290E5B5A141806D700AC313A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 290E5B58141806D700AC313A /* InfoPlist.strings */; };
+		290E5B5C141806D700AC313A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 290E5B5B141806D700AC313A /* main.m */; };
+		290E5B60141806D700AC313A /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 290E5B5E141806D700AC313A /* Credits.rtf */; };
+		290E5B63141806D700AC313A /* RemoteAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 290E5B62141806D700AC313A /* RemoteAppDelegate.m */; };
+		290E5B66141806D800AC313A /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 290E5B64141806D800AC313A /* MainMenu.xib */; };
+		290E5B6E141806D800AC313A /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 290E5B6D141806D800AC313A /* SenTestingKit.framework */; };
+		290E5B6F141806D800AC313A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 290E5B4F141806D700AC313A /* Cocoa.framework */; };
+		290E5B77141806D800AC313A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 290E5B75141806D800AC313A /* InfoPlist.strings */; };
+		290E5B79141806D800AC313A /* RemoteTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 290E5B78141806D800AC313A /* RemoteTests.h */; };
+		290E5B7B141806D800AC313A /* RemoteTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 290E5B7A141806D800AC313A /* RemoteTests.m */; };
+		290E5B8D1418072300AC313A /* AppleRemote.m in Sources */ = {isa = PBXBuildFile; fileRef = 290E5B861418072300AC313A /* AppleRemote.m */; };
+		290E5B8E1418072300AC313A /* HIDRemoteControlDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 290E5B881418072300AC313A /* HIDRemoteControlDevice.m */; };
+		290E5B8F1418072300AC313A /* MultiClickRemoteBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = 290E5B8A1418072300AC313A /* MultiClickRemoteBehavior.m */; };
+		290E5B901418072300AC313A /* RemoteControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 290E5B8C1418072300AC313A /* RemoteControl.m */; };
+		290E5B96141808D500AC313A /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 290E5B95141808D500AC313A /* IOKit.framework */; };
+		290E5B98141808E800AC313A /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 290E5B97141808E800AC313A /* Carbon.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		290E5B70141806D800AC313A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 290E5B42141806D700AC313A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 290E5B4A141806D700AC313A;
+			remoteInfo = Remote;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		290E5B4B141806D700AC313A /* Remote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Remote.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		290E5B4F141806D700AC313A /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		290E5B52141806D700AC313A /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		290E5B53141806D700AC313A /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		290E5B54141806D700AC313A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		290E5B57141806D700AC313A /* Remote-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Remote-Info.plist"; sourceTree = "<group>"; };
+		290E5B59141806D700AC313A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		290E5B5B141806D700AC313A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		290E5B5D141806D700AC313A /* Remote-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Remote-Prefix.pch"; sourceTree = "<group>"; };
+		290E5B5F141806D700AC313A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		290E5B61141806D700AC313A /* RemoteAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RemoteAppDelegate.h; sourceTree = "<group>"; };
+		290E5B62141806D700AC313A /* RemoteAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RemoteAppDelegate.m; sourceTree = "<group>"; };
+		290E5B65141806D800AC313A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		290E5B6C141806D800AC313A /* RemoteTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RemoteTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		290E5B6D141806D800AC313A /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		290E5B74141806D800AC313A /* RemoteTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RemoteTests-Info.plist"; sourceTree = "<group>"; };
+		290E5B76141806D800AC313A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		290E5B78141806D800AC313A /* RemoteTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RemoteTests.h; sourceTree = "<group>"; };
+		290E5B7A141806D800AC313A /* RemoteTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RemoteTests.m; sourceTree = "<group>"; };
+		290E5B851418072300AC313A /* AppleRemote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppleRemote.h; sourceTree = "<group>"; };
+		290E5B861418072300AC313A /* AppleRemote.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppleRemote.m; sourceTree = "<group>"; };
+		290E5B871418072300AC313A /* HIDRemoteControlDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HIDRemoteControlDevice.h; sourceTree = "<group>"; };
+		290E5B881418072300AC313A /* HIDRemoteControlDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HIDRemoteControlDevice.m; sourceTree = "<group>"; };
+		290E5B891418072300AC313A /* MultiClickRemoteBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiClickRemoteBehavior.h; sourceTree = "<group>"; };
+		290E5B8A1418072300AC313A /* MultiClickRemoteBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultiClickRemoteBehavior.m; sourceTree = "<group>"; };
+		290E5B8B1418072300AC313A /* RemoteControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RemoteControl.h; sourceTree = "<group>"; };
+		290E5B8C1418072300AC313A /* RemoteControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RemoteControl.m; sourceTree = "<group>"; };
+		290E5B95141808D500AC313A /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		290E5B97141808E800AC313A /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		290E5B48141806D700AC313A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				290E5B98141808E800AC313A /* Carbon.framework in Frameworks */,
+				290E5B96141808D500AC313A /* IOKit.framework in Frameworks */,
+				290E5B50141806D700AC313A /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		290E5B68141806D800AC313A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				290E5B6E141806D800AC313A /* SenTestingKit.framework in Frameworks */,
+				290E5B6F141806D800AC313A /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		290E5B40141806D700AC313A = {
+			isa = PBXGroup;
+			children = (
+				290E5B97141808E800AC313A /* Carbon.framework */,
+				290E5B95141808D500AC313A /* IOKit.framework */,
+				290E5B55141806D700AC313A /* Remote */,
+				290E5B72141806D800AC313A /* RemoteTests */,
+				290E5B4E141806D700AC313A /* Frameworks */,
+				290E5B4C141806D700AC313A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		290E5B4C141806D700AC313A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				290E5B4B141806D700AC313A /* Remote.app */,
+				290E5B6C141806D800AC313A /* RemoteTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		290E5B4E141806D700AC313A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				290E5B4F141806D700AC313A /* Cocoa.framework */,
+				290E5B6D141806D800AC313A /* SenTestingKit.framework */,
+				290E5B51141806D700AC313A /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		290E5B51141806D700AC313A /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				290E5B52141806D700AC313A /* AppKit.framework */,
+				290E5B53141806D700AC313A /* CoreData.framework */,
+				290E5B54141806D700AC313A /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		290E5B55141806D700AC313A /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				290E5B84141806EB00AC313A /* RemoteControll */,
+				290E5B61141806D700AC313A /* RemoteAppDelegate.h */,
+				290E5B62141806D700AC313A /* RemoteAppDelegate.m */,
+				290E5B64141806D800AC313A /* MainMenu.xib */,
+				290E5B56141806D700AC313A /* Supporting Files */,
+			);
+			path = Remote;
+			sourceTree = "<group>";
+		};
+		290E5B56141806D700AC313A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				290E5B57141806D700AC313A /* Remote-Info.plist */,
+				290E5B58141806D700AC313A /* InfoPlist.strings */,
+				290E5B5B141806D700AC313A /* main.m */,
+				290E5B5D141806D700AC313A /* Remote-Prefix.pch */,
+				290E5B5E141806D700AC313A /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		290E5B72141806D800AC313A /* RemoteTests */ = {
+			isa = PBXGroup;
+			children = (
+				290E5B78141806D800AC313A /* RemoteTests.h */,
+				290E5B7A141806D800AC313A /* RemoteTests.m */,
+				290E5B73141806D800AC313A /* Supporting Files */,
+			);
+			path = RemoteTests;
+			sourceTree = "<group>";
+		};
+		290E5B73141806D800AC313A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				290E5B74141806D800AC313A /* RemoteTests-Info.plist */,
+				290E5B75141806D800AC313A /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		290E5B84141806EB00AC313A /* RemoteControll */ = {
+			isa = PBXGroup;
+			children = (
+				290E5B851418072300AC313A /* AppleRemote.h */,
+				290E5B861418072300AC313A /* AppleRemote.m */,
+				290E5B871418072300AC313A /* HIDRemoteControlDevice.h */,
+				290E5B881418072300AC313A /* HIDRemoteControlDevice.m */,
+				290E5B891418072300AC313A /* MultiClickRemoteBehavior.h */,
+				290E5B8A1418072300AC313A /* MultiClickRemoteBehavior.m */,
+				290E5B8B1418072300AC313A /* RemoteControl.h */,
+				290E5B8C1418072300AC313A /* RemoteControl.m */,
+			);
+			name = RemoteControll;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		290E5B4A141806D700AC313A /* Remote */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 290E5B7E141806D800AC313A /* Build configuration list for PBXNativeTarget "Remote" */;
+			buildPhases = (
+				290E5B47141806D700AC313A /* Sources */,
+				290E5B48141806D700AC313A /* Frameworks */,
+				290E5B49141806D700AC313A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Remote;
+			productName = Remote;
+			productReference = 290E5B4B141806D700AC313A /* Remote.app */;
+			productType = "com.apple.product-type.application";
+		};
+		290E5B6B141806D800AC313A /* RemoteTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 290E5B81141806D800AC313A /* Build configuration list for PBXNativeTarget "RemoteTests" */;
+			buildPhases = (
+				290E5B67141806D800AC313A /* Sources */,
+				290E5B68141806D800AC313A /* Frameworks */,
+				290E5B69141806D800AC313A /* Resources */,
+				290E5B6A141806D800AC313A /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				290E5B71141806D800AC313A /* PBXTargetDependency */,
+			);
+			name = RemoteTests;
+			productName = RemoteTests;
+			productReference = 290E5B6C141806D800AC313A /* RemoteTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		290E5B42141806D700AC313A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "HTW Berlin";
+			};
+			buildConfigurationList = 290E5B45141806D700AC313A /* Build configuration list for PBXProject "Remote" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 290E5B40141806D700AC313A;
+			productRefGroup = 290E5B4C141806D700AC313A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				290E5B4A141806D700AC313A /* Remote */,
+				290E5B6B141806D800AC313A /* RemoteTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		290E5B49141806D700AC313A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				290E5B5A141806D700AC313A /* InfoPlist.strings in Resources */,
+				290E5B60141806D700AC313A /* Credits.rtf in Resources */,
+				290E5B66141806D800AC313A /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		290E5B69141806D800AC313A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				290E5B77141806D800AC313A /* InfoPlist.strings in Resources */,
+				290E5B79141806D800AC313A /* RemoteTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		290E5B6A141806D800AC313A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		290E5B47141806D700AC313A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				290E5B5C141806D700AC313A /* main.m in Sources */,
+				290E5B63141806D700AC313A /* RemoteAppDelegate.m in Sources */,
+				290E5B8D1418072300AC313A /* AppleRemote.m in Sources */,
+				290E5B8E1418072300AC313A /* HIDRemoteControlDevice.m in Sources */,
+				290E5B8F1418072300AC313A /* MultiClickRemoteBehavior.m in Sources */,
+				290E5B901418072300AC313A /* RemoteControl.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		290E5B67141806D800AC313A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				290E5B7B141806D800AC313A /* RemoteTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		290E5B71141806D800AC313A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 290E5B4A141806D700AC313A /* Remote */;
+			targetProxy = 290E5B70141806D800AC313A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		290E5B58141806D700AC313A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				290E5B59141806D700AC313A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		290E5B5E141806D700AC313A /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				290E5B5F141806D700AC313A /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		290E5B64141806D800AC313A /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				290E5B65141806D800AC313A /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		290E5B75141806D800AC313A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				290E5B76141806D800AC313A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		290E5B7C141806D800AC313A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		290E5B7D141806D800AC313A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		290E5B7F141806D800AC313A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Remote/Remote-Prefix.pch";
+				INFOPLIST_FILE = "Remote/Remote-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		290E5B80141806D800AC313A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Remote/Remote-Prefix.pch";
+				INFOPLIST_FILE = "Remote/Remote-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		290E5B82141806D800AC313A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Remote.app/Contents/MacOS/Remote";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Remote/Remote-Prefix.pch";
+				INFOPLIST_FILE = "RemoteTests/RemoteTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		290E5B83141806D800AC313A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Remote.app/Contents/MacOS/Remote";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Remote/Remote-Prefix.pch";
+				INFOPLIST_FILE = "RemoteTests/RemoteTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		290E5B45141806D700AC313A /* Build configuration list for PBXProject "Remote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				290E5B7C141806D800AC313A /* Debug */,
+				290E5B7D141806D800AC313A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		290E5B7E141806D800AC313A /* Build configuration list for PBXNativeTarget "Remote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				290E5B7F141806D800AC313A /* Debug */,
+				290E5B80141806D800AC313A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		290E5B81141806D800AC313A /* Build configuration list for PBXNativeTarget "RemoteTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				290E5B82141806D800AC313A /* Debug */,
+				290E5B83141806D800AC313A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 290E5B42141806D700AC313A /* Project object */;
+}
