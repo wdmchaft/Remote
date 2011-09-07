@@ -17,8 +17,20 @@
 @synthesize remoteControll = _remoteControl;
 @synthesize indicator = _indicator;
 
+
+
+- (void)disableInidcator
+{
+    [_indicator setIntValue:0];
+}
+
+
+#pragma mark - NSApplication delegates
+
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
+    
+    [NSApp delete:self];
     _remoteControl = [[AppleRemote alloc] initWithDelegate: self];
     [_remoteControl setDelegate: self];	
     
@@ -38,6 +50,14 @@
     [_remoteBehavior release]; _remoteBehavior = nil;
 }
 
+- (BOOL)applicationShouldTerminateAfterLastWindowClosed:(NSApplication *)sender
+{
+    return YES;
+}
+
+
+
+#pragma mark - RemoteControl delegate
 - (void) remoteButton:(RemoteControlEventIdentifier)buttonIdentifier pressedDown:(BOOL)pressedDown clickCount: 
   (unsigned int)clickCount
 {
@@ -53,6 +73,10 @@
    
 }
 
+
+
+#pragma mark - IBActions
+
 - (IBAction)enableDisableRemoteControll:(id)sender
 {
     if (_remoteControl.isListeningToRemote == YES) {
@@ -60,11 +84,6 @@
     } else {
         [_remoteControl setListeningToRemote:YES];
     }
-}
-
-- (void)disableInidcator
-{
-    [_indicator setIntValue:0];
 }
 
 @end
