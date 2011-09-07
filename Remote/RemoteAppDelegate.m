@@ -19,13 +19,10 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-   _remoteControl = [[AppleRemote alloc] initWithDelegate: self];
-	[_remoteControl setDelegate: self];	
+    _remoteControl = [[AppleRemote alloc] initWithDelegate: self];
+    [_remoteControl setDelegate: self];	
     
-	// OPTIONAL CODE 
-	// The MultiClickRemoteBehavior adds extra functionality.
-	// It works like a middle man between the delegate and the remote control
-	_remoteBehavior = [MultiClickRemoteBehavior new];		
+	_remoteBehavior = [[MultiClickRemoteBehavior alloc] init];		
 	[_remoteBehavior setDelegate: self];
 	[_remoteControl setDelegate: _remoteBehavior];
 
@@ -33,7 +30,16 @@
     [_remoteControl setListeningToRemote:NO];
 }
 
-- (void) remoteButton:(RemoteControlEventIdentifier)buttonIdentifier pressedDown:(BOOL)pressedDown clickCount: (unsigned int)clickCount
+- (void)applicationWillTerminate:(NSNotification *)notification
+{
+    [_remoteControl stopListening:self];
+    
+    [_remoteControl release]; _remoteControl = nil;
+    [_remoteBehavior release]; _remoteBehavior = nil;
+}
+
+- (void) remoteButton:(RemoteControlEventIdentifier)buttonIdentifier pressedDown:(BOOL)pressedDown clickCount: 
+  (unsigned int)clickCount
 {
     if (pressedDown == YES) {
         [_indicator setIntValue:1];

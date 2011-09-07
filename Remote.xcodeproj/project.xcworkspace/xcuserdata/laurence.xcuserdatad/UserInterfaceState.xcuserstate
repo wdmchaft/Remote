@@ -994,9 +994,9 @@
 				</dict>
 			</array>
 		</dict>
-		<real>337122018.97759598</real>
-		<string>{197, 1462}</string>
-		<string>{1229, 0}</string>
+		<real>337123009.31417799</real>
+		<string>{142, 1531}</string>
+		<string>{640, 0}</string>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -1412,7 +1412,7 @@
 				<integer>144</integer>
 			</dict>
 			<key>NS.time</key>
-			<real>337122013.97619498</real>
+			<real>337123008.82714301</real>
 		</dict>
 		<dict>
 			<key>$classes</key>
@@ -1423,7 +1423,7 @@
 			<key>$classname</key>
 			<string>NSDate</string>
 		</dict>
-		<string>Today at 23:00</string>
+		<string>Today at 23:16</string>
 		<integer>234</integer>
 		<string>Remote</string>
 		<dict>
@@ -2375,15 +2375,15 @@
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>309</integer>
-				</dict>
-				<dict>
-					<key>CF$UID</key>
-					<integer>317</integer>
+					<integer>310</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
 					<integer>318</integer>
+				</dict>
+				<dict>
+					<key>CF$UID</key>
+					<integer>319</integer>
 				</dict>
 			</array>
 		</dict>
@@ -2785,7 +2785,7 @@
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>307</integer>
+					<integer>308</integer>
 				</dict>
 			</array>
 		</dict>
@@ -2855,15 +2855,7 @@
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>299</integer>
-				</dict>
-				<dict>
-					<key>CF$UID</key>
-					<integer>303</integer>
-				</dict>
-				<dict>
-					<key>CF$UID</key>
-					<integer>220</integer>
+					<integer>300</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
@@ -2871,7 +2863,15 @@
 				</dict>
 				<dict>
 					<key>CF$UID</key>
+					<integer>220</integer>
+				</dict>
+				<dict>
+					<key>CF$UID</key>
 					<integer>305</integer>
+				</dict>
+				<dict>
+					<key>CF$UID</key>
+					<integer>306</integer>
 				</dict>
 			</array>
 		</dict>
@@ -2887,7 +2887,7 @@
 			<key>$class</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>298</integer>
+				<integer>299</integer>
 			</dict>
 			<key>DocumentLocation</key>
 			<dict>
@@ -2983,18 +2983,27 @@
 			<key>$class</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>297</integer>
+				<integer>298</integer>
 			</dict>
 			<key>documentURL</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>81</integer>
+				<integer>297</integer>
 			</dict>
 			<key>timestamp</key>
 			<dict>
 				<key>CF$UID</key>
 				<integer>0</integer>
 			</dict>
+		</dict>
+		<dict>
+			<key>$class</key>
+			<dict>
+				<key>CF$UID</key>
+				<integer>24</integer>
+			</dict>
+			<key>NS.string</key>
+			<string>file://localhost/Users/laurence/development/workspaces/xcode/Remote/Remote/RemoteAppDelegate.m</string>
 		</dict>
 		<dict>
 			<key>$classes</key>
@@ -3043,11 +3052,11 @@
 			<array>
 				<dict>
 					<key>CF$UID</key>
-					<integer>300</integer>
+					<integer>301</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>301</integer>
+					<integer>302</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
@@ -3055,14 +3064,14 @@
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>302</integer>
+					<integer>303</integer>
 				</dict>
 			</array>
 		</dict>
-		<real>337122018.97999102</real>
-		<string>{197, 1462}</string>
-		<string>{1229, 0}</string>
-		<string>-remoteButton:pressedDown:clickCount:</string>
+		<real>337123009.318124</real>
+		<string>{142, 1531}</string>
+		<string>{640, 0}</string>
+		<string>-applicationDidFinishLaunching:</string>
 		<string>Xcode.IDEKit.EditorDocument.SourceCode</string>
 		<dict>
 			<key>$class</key>
@@ -3078,7 +3087,7 @@
 			<key>NS.relative</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>306</integer>
+				<integer>307</integer>
 			</dict>
 		</dict>
 		<string>file://localhost/Users/laurence/development/workspaces/xcode/Remote/Remote/RemoteAppDelegate.m</string>
@@ -3092,11 +3101,11 @@
 			<array>
 				<dict>
 					<key>CF$UID</key>
-					<integer>308</integer>
+					<integer>309</integer>
 				</dict>
 			</array>
 		</dict>
-		<string>{{0, 0}, {880, 748}}</string>
+		<string>{{0, 0}, {880, 726}}</string>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -3114,7 +3123,7 @@
 			<array>
 				<dict>
 					<key>CF$UID</key>
-					<integer>310</integer>
+					<integer>311</integer>
 				</dict>
 			</array>
 		</dict>
@@ -3128,11 +3137,11 @@
 			<array>
 				<dict>
 					<key>CF$UID</key>
-					<integer>311</integer>
+					<integer>312</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>314</integer>
+					<integer>315</integer>
 				</dict>
 			</array>
 		</dict>
@@ -3157,11 +3166,11 @@
 			<array>
 				<dict>
 					<key>CF$UID</key>
-					<integer>312</integer>
+					<integer>313</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>313</integer>
+					<integer>314</integer>
 				</dict>
 			</array>
 		</dict>
@@ -3188,11 +3197,11 @@
 			<array>
 				<dict>
 					<key>CF$UID</key>
-					<integer>315</integer>
+					<integer>316</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>316</integer>
+					<integer>317</integer>
 				</dict>
 			</array>
 		</dict>
@@ -3213,7 +3222,7 @@
 			<key>$class</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>329</integer>
+				<integer>330</integer>
 			</dict>
 			<key>geniusEditorContextNode</key>
 			<dict>
@@ -3223,19 +3232,19 @@
 			<key>primaryEditorContextNode</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>319</integer>
+				<integer>320</integer>
 			</dict>
 			<key>rootLayoutTreeNode</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>326</integer>
+				<integer>327</integer>
 			</dict>
 		</dict>
 		<dict>
 			<key>$class</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>328</integer>
+				<integer>329</integer>
 			</dict>
 			<key>children</key>
 			<dict>
@@ -3247,21 +3256,21 @@
 			<key>documentArchivableRepresentation</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>320</integer>
+				<integer>321</integer>
 			</dict>
 			<key>orientation</key>
 			<integer>0</integer>
 			<key>parent</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>326</integer>
+				<integer>327</integer>
 			</dict>
 		</dict>
 		<dict>
 			<key>$class</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>298</integer>
+				<integer>299</integer>
 			</dict>
 			<key>DocumentLocation</key>
 			<dict>
@@ -3276,7 +3285,7 @@
 			<key>IdentifierPath</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>321</integer>
+				<integer>322</integer>
 			</dict>
 			<key>IndexOfDocumentIdentifier</key>
 			<dict>
@@ -3294,15 +3303,15 @@
 			<array>
 				<dict>
 					<key>CF$UID</key>
-					<integer>322</integer>
-				</dict>
-				<dict>
-					<key>CF$UID</key>
 					<integer>323</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
 					<integer>324</integer>
+				</dict>
+				<dict>
+					<key>CF$UID</key>
+					<integer>325</integer>
 				</dict>
 			</array>
 		</dict>
@@ -3339,7 +3348,7 @@
 			<key>Identifier</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>325</integer>
+				<integer>326</integer>
 			</dict>
 		</dict>
 		<string>Remote</string>
@@ -3347,12 +3356,12 @@
 			<key>$class</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>328</integer>
+				<integer>329</integer>
 			</dict>
 			<key>children</key>
 			<dict>
 				<key>CF$UID</key>
-				<integer>327</integer>
+				<integer>328</integer>
 			</dict>
 			<key>contentType</key>
 			<integer>0</integer>
@@ -3379,7 +3388,7 @@
 			<array>
 				<dict>
 					<key>CF$UID</key>
-					<integer>319</integer>
+					<integer>320</integer>
 				</dict>
 			</array>
 		</dict>
