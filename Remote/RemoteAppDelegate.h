@@ -16,12 +16,15 @@
     NSWindow *window;
     
     RemoteControl *_remoteControl;
-    MultiClickRemoteBehavior* remoteBehavior;
+    MultiClickRemoteBehavior *_remoteBehavior;
+    NSLevelIndicator *_indicator;
 }
 
-@property (assign) IBOutlet NSWindow *window;
-@property (nonatomic, retain) RemoteControl *remoteControll;
+@property(assign) IBOutlet NSWindow *window;
+@property(nonatomic, retain) IBOutlet RemoteControl *remoteControll;
+@property(nonatomic, retain) IBOutlet NSLevelIndicator *indicator;
 
 - (IBAction)enableDisableRemoteControll:(id)sender;
+- (void)disableInidcator;
 
 @end

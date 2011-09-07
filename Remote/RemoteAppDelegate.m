@@ -15,6 +15,7 @@
 
 @synthesize window;
 @synthesize remoteControll = _remoteControl;
+@synthesize indicator = _indicator;
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
@@ -24,19 +25,26 @@
 	// OPTIONAL CODE 
 	// The MultiClickRemoteBehavior adds extra functionality.
 	// It works like a middle man between the delegate and the remote control
-	remoteBehavior = [MultiClickRemoteBehavior new];		
-	[remoteBehavior setDelegate: self];
-	[_remoteControl setDelegate: remoteBehavior];
+	_remoteBehavior = [MultiClickRemoteBehavior new];		
+	[_remoteBehavior setDelegate: self];
+	[_remoteControl setDelegate: _remoteBehavior];
 
     [_remoteControl startListening: self];
     [_remoteControl setListeningToRemote:NO];
 }
 
-- (void) remoteButton: (RemoteControlEventIdentifier)buttonIdentifier pressedDown: (BOOL) pressedDown clickCount: (unsigned int)clickCount
+- (void) remoteButton:(RemoteControlEventIdentifier)buttonIdentifier pressedDown:(BOOL)pressedDown clickCount: (unsigned int)clickCount
 {
-    if (pressedDown == YES) return;
+    if (pressedDown == YES) {
+        [_indicator setIntValue:1];
+        return;
+    } else {
+        [self disableInidcator];
+    }
 
-    NSLog(@"Click");
+    [_indicator setIntValue:1];
+    [self performSelector:@selector(disableInidcator) withObject:self afterDelay:0.1];
+   
 }
 
 - (IBAction)enableDisableRemoteControll:(id)sender
@@ -46,6 +54,11 @@
     } else {
         [_remoteControl setListeningToRemote:YES];
     }
+}
+
+- (void)disableInidcator
+{
+    [_indicator setIntValue:0];
 }
 
 @end
