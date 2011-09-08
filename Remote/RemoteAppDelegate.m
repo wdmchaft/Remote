@@ -17,7 +17,10 @@
 @synthesize remoteControll = _remoteControl;
 @synthesize indicator = _indicator;
 
-
+static int ARROW_LEFT = 123;
+static int ARROW_RIGHT = 124;
+static int ARROW_UP = 126;
+static int ARROW_DOWN = 125;
 
 - (void)disableInidcator
 {
@@ -66,10 +69,39 @@
     } else {
         [self disableInidcator];
     }
+    
+    int keyCode = 0;
+    
+    switch (buttonIdentifier) {
+        case kRemoteButtonLeft:
+            keyCode = ARROW_LEFT;
+            break;
+        case kRemoteButtonRight:
+            keyCode = ARROW_RIGHT;
+            break;
+        case kRemoteButtonPlus:
+            keyCode = ARROW_DOWN;
+            break;
+        case kRemoteButtonMinus:
+            keyCode = ARROW_UP;
+            break;
+        case kRemoteButtonPlay:
+            keyCode = ARROW_RIGHT;
+            break;
+        case kRemoteButtonMenu:
+            keyCode = ARROW_RIGHT;
+            break;
+        default:
+            keyCode = ARROW_RIGHT;
+            break;
+    }
 
+    CGEventRef e1 = CGEventCreateKeyboardEvent(NULL, (CGKeyCode)keyCode, true);
+    CGEventPost(kCGSessionEventTap, e1);
+    CFRelease(e1);
+    
     [_indicator setIntValue:1];
     [self performSelector:@selector(disableInidcator) withObject:self afterDelay:0.1];
-   
 }
 
 
